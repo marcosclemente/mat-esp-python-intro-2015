@@ -4,7 +4,11 @@ N = 20
 # lista com os dados que serão organizados
 lista = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 
+<<<<<<< HEAD
 print("Lista original:", lista)
+=======
+print(lista)
+>>>>>>> 491687852276c0d43c08cd45cd25bbedfd5dec00
 
 # Para cada i (nome escolhido para selecionar uma posição), indo da posição 0 até a penultima posição (N-1) o terceiro número indica a quantidade de algarismos que o programa lerá (..,...1)
 for i in range(0,N-1,1):
@@ -16,4 +20,8 @@ for i in range(0,N-1,1):
             tmp = lista[i]
             lista[i] = lista[j]
             lista[j] = tmp
+<<<<<<< HEAD
 print("Lista em ordem crescente:", lista)
+=======
+print(lista)
+>>>>>>> 491687852276c0d43c08cd45cd25bbedfd5dec00
