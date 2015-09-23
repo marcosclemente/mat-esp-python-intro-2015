@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 # Número de elementos da lista utilizada, também indica o número de posições que a lista terá
 N = 20
 
@@ -7,7 +9,6 @@ lista = [11, 18, 3, 1, 16, 12, 6, 19, 5, 0, 14, 4, 17, 9, 13, 7, 10, 15, 2, 8]
 
 print("Lista original:", lista)
 
-import matplotlib.pyplot as plt
 
 x = range(0,20,1)
 y = lista
@@ -30,10 +31,19 @@ for i in range(0,N-1,1):
             tmp = lista[i]
             lista[i] = lista[j]
             lista[j] = tmp
+        x=range(0,20,1)
+        y=lista
+        plt.figure()
+        plt.plot(x,y,'ok')
+        plt.title("grafico em progresso")
+        plt.xlabel("x eh os valores da lista")
+        plt.savefig("p2/bubble-{}.png".format(i))
+        plt.close()
+
 
 print("Lista em ordem crescente:", lista)
 
-import matplotlib.pyplot as plt
+
 
 x = range(0,20,1)
 y = lista
