@@ -45,7 +45,8 @@ plt.xlabel("x eh os valores da lista")
 plt.savefig("fig/bubble-fim.png")
 plt.close()
 
-
+print("Cinco menores valores",lista[0:5])
+print("Cinco maiores valores",lista[N-5:N])
 
 
 
