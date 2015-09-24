@@ -31,16 +31,15 @@ for i in range(0,N-1,1):
             tmp = lista[i]
             lista[i] = lista[j]
             lista[j] = tmp
-            trocofora = trocofora + 1
-        x=range(0,20,1)
-        y=lista
-        plt.figure()
-        plt.plot(x,y,'ok')
-        plt.title("grafico em progresso")
-        plt.xlabel("x eh os valores da lista")
-        plt.savefig("fig/bubble-{}.png".format(trocofora))
-        plt.close()
-
+            x = range(0,20,1)
+            y = lista
+            trocofora = trocofora +1
+            plt.figure()
+            plt.plot(x,y,'ok')
+            plt.title("grafico em progresso")
+            plt.xlabel("valores")
+            plt.savefig("p2/bubble-troca{}.png".format(trocofora))
+            plt.close()
 
 print("Lista em ordem crescente:", lista)
 
