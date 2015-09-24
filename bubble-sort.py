@@ -20,7 +20,7 @@ plt.xlabel("x eh os valores da lista")
 plt.savefig("fig/bubble-inicio.png")
 plt.close()
 
-
+trocofora = 0
 # Para cada i (nome escolhido para selecionar uma posição), indo da posição 0 até a penultima posição (N-1) o terceiro número indica a quantidade de algarismos que o programa lerá (..,...1)
 for i in range(0,N-1,1):
 # Escolhemos um segundo item dentro da lista que foi nomeado de j usando a mesma função do range, este esta condicionado as posições que o i assumi
@@ -31,13 +31,14 @@ for i in range(0,N-1,1):
             tmp = lista[i]
             lista[i] = lista[j]
             lista[j] = tmp
+            trocofora = trocofora + 1
         x=range(0,20,1)
         y=lista
         plt.figure()
         plt.plot(x,y,'ok')
         plt.title("grafico em progresso")
         plt.xlabel("x eh os valores da lista")
-        plt.savefig("p2/bubble-{}.png".format(i))
+        plt.savefig("fig/bubble-{}.png".format(trocofora))
         plt.close()
 
 
